@@ -13,6 +13,14 @@ class GoogleResearchSpider(scrapy.Spider):
         pass
 
 
+class GoogleResearchAuthorItem(scrapy.Item):
+    pass
+
+
+class GoogleResearchPaperItem(scrapy.Item):
+    pass
+
+
 class GoogleResearchAuthorParser(object):
 
     def parse_author(self, response):
