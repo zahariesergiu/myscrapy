@@ -3,6 +3,7 @@
 
 # scrapy
 /scrapy.iml
+.scrapy
 
 # pycharm
 .idea
