@@ -1,0 +1,8 @@
+# python
+*.pyc
+
+# scrapy
+/scrapy.iml
+
+# pycharm
+.idea
