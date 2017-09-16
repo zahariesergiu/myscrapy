@@ -1,6 +1,8 @@
 asn1crypto==0.22.0
 attrs==17.2.0
 Automat==0.6.0
+beautifulsoup4==4.6.0
+bs4==0.0.1
 cffi==1.10.0
 constantly==15.1.0
 cryptography==2.0.3
@@ -13,6 +15,7 @@ ipaddress==1.0.18
 lxml==3.8.0
 olefile==0.44
 parsel==1.2.0
+Pillow==4.2.1
 pyasn1==0.3.4
 pyasn1-modules==0.1.4
 pycparser==2.18
@@ -23,6 +26,6 @@ Scrapy==1.4.0
 service-identity==17.0.0
 six==1.10.0
 Twisted==17.5.0
+uuid==1.30
 w3lib==1.18.0
 zope.interface==4.4.2
-uuid==1.30
