@@ -11,3 +11,15 @@ class GoogleResearchSpider(scrapy.Spider):
 
     def parse(self, response):
         pass
+
+
+class GoogleResearchAuthorParser(object):
+
+    def parse_author(self, response):
+        pass
+
+
+class GoogleResearchPaperParser(object):
+
+    def parse_paper(self, response):
+        pass
