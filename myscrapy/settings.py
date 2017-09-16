@@ -88,3 +88,13 @@ HTTPCACHE_EXPIRATION_SECS = 0
 HTTPCACHE_DIR = 'httpcache'
 HTTPCACHE_IGNORE_HTTP_CODES = []
 HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+MEDIA_ALLOW_REDIRECTS = True
+
+ITEM_PIPELINES = {
+    'scrapy.pipelines.files.FilesPipeline': 1,
+    'scrapy.pipelines.images.ImagesPipeline': 2,
+}
+
+FILES_STORE = 'files'
+IMAGES_STORE = 'images'
