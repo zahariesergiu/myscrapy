@@ -15,5 +15,5 @@ class BaseItem(scrapy.Item):
             if 'default' in self.fields[field]:
                 self[field] = self.fields[field]['default']
 
-    uuid = scrapy.Field()
+    uuid = scrapy.Field(default=uuid.uuid4().get_hex())
     source_url = scrapy.Field()
