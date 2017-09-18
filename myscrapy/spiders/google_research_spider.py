@@ -26,12 +26,12 @@ class GoogleResearchPaperItem(scrapy.Item):
 class GoogleResearchAuthorParser(object):
     """Parser class that parsers information about an google research author, to be used by spiders"""
 
-    def parse_author(self, response):
-        pass
+    def parse(self, response):
+        """Default method used by parser class to parse page"""
 
 
 class GoogleResearchPaperParser(object):
     """Parser class that parsers information about an google research paper, to be used by spiders"""
 
-    def parse_paper(self, response):
-        pass
+    def parse(self, response):
+        """Default method used by parser class to parse page"""
