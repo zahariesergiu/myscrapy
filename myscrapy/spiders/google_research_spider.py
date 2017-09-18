@@ -8,7 +8,7 @@ class GoogleResearchSpider(scrapy.Spider):
     """Spider which collects items about Google research papers, authors, downloads document files and image files"""
 
     name = 'google-research-spider'
-    start_urls = []
+    start_urls = ['https://research.google.com/pubs/papers.html']
 
     def start_requests(self):
         for start_url in self.start_urls:
