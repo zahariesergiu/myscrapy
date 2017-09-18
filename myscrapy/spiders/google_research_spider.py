@@ -2,6 +2,8 @@ import scrapy
 
 
 class GoogleResearchSpider(scrapy.Spider):
+    """Spider which collects items about Google research papers, authors, downloads document files and image files"""
+
     name = 'google-research-spider'
     start_urls = []
 
@@ -14,20 +16,22 @@ class GoogleResearchSpider(scrapy.Spider):
 
 
 class GoogleResearchAuthorItem(scrapy.Item):
-    pass
+    """Item that defines a Google Research Author"""
 
 
 class GoogleResearchPaperItem(scrapy.Item):
-    pass
+    """Item that defines a Google Research Paper"""
 
 
 class GoogleResearchAuthorParser(object):
+    """Parser class that parsers information about an google research author, to be used by spiders"""
 
     def parse_author(self, response):
         pass
 
 
 class GoogleResearchPaperParser(object):
+    """Parser class that parsers information about an google research paper, to be used by spiders"""
 
     def parse_paper(self, response):
         pass
