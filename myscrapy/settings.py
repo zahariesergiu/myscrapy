@@ -92,14 +92,19 @@ HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 MEDIA_ALLOW_REDIRECTS = True
 
 ITEM_PIPELINES = {
-    'scrapy.pipelines.files.FilesPipeline': 1,
-    'scrapy.pipelines.images.ImagesPipeline': 2,
+    # 'scrapy.pipelines.files.FilesPipeline': 1,
+    # 'scrapy.pipelines.images.ImagesPipeline': 2,
+
+    'scrapy_gridfsfilespipeline.files.GridFSFilesPipeline': 3,
+    'scrapy_gridfsfilespipeline.images.GridFSImagesPipeline': 4,
 }
 
-FILES_STORE = 'files'
-IMAGES_STORE = 'images'
+# FILES_STORE = 'files'
+# IMAGES_STORE = 'images'
 
 IMAGES_THUMBS = {
     'small': (50, 50),
     'big': (100, 100),
 }
+
+MONGO_URI = "mongodb://localhost:27017/myscrapy"
