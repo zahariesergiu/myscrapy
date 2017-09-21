@@ -1,6 +1,7 @@
 import scrapy
 from bs4 import BeautifulSoup
 
+from ..base import items as base_items
 from .. import utils
 
 
@@ -46,7 +47,7 @@ class GoogleResearchSpider(scrapy.Spider):
                 break  # break after first yield, use in dev to scrape just 1 item
 
 
-class GoogleResearchAuthorItem(scrapy.Item):
+class GoogleResearchAuthorItem(base_items.BaseItem):
     """Item that defines a Google Research Author"""
 
     name = scrapy.Field()
@@ -54,7 +55,7 @@ class GoogleResearchAuthorItem(scrapy.Item):
     images = scrapy.Field()
 
 
-class GoogleResearchPaperItem(scrapy.Item):
+class GoogleResearchPaperItem(base_items.BaseItem):
     """Item that defines a Google Research Paper"""
 
     title = scrapy.Field()
