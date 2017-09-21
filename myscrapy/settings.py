@@ -98,3 +98,8 @@ ITEM_PIPELINES = {
 
 FILES_STORE = 'files'
 IMAGES_STORE = 'images'
+
+IMAGES_THUMBS = {
+    'small': (50, 50),
+    'big': (100, 100),
+}
